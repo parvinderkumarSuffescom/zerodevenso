@@ -1,0 +1,39 @@
+{
+    "name": "multi-chain-passkey-example",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@ensofinance/sdk": "^1.0.13",
+        "@zerodev/ecdsa-validator": "^5.4.3",
+        "@zerodev/passkey-validator": "^5.5.0",
+        "@zerodev/sdk": "^5.4.19",
+        "@zerodev/webauthn-key": "^5.4.2",
+        "@zerodev/weighted-ecdsa-validator": "^5.4.1",
+        "@zerodev/weighted-validator": "^5.4.4",
+        "dotenv": "^16.4.5",
+        "next": "^14.2.3",
+        "permissionless": "^0.2.33",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "viem": "^2.22.14"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/node": "^20.17.16",
+        "@types/react": "^18.3.18",
+        "@types/react-dom": "^18.3.5",
+        "@types/ws": "^8.5.13",
+        "autoprefixer": "^10.0.1",
+        "eslint": "^8",
+        "eslint-config-next": "14.1.0",
+        "postcss": "^8",
+        "tailwindcss": "^3.3.0",
+        "typescript": "^5"
+    }
+}
