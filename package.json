@@ -12,7 +12,7 @@
         "@ensofinance/sdk": "^1.0.13",
         "@zerodev/ecdsa-validator": "^5.4.3",
         "@zerodev/passkey-validator": "^5.5.0",
-        "@zerodev/permissions": "^5.5.2",
+        "@zerodev/permissions": "^5.5.0",
         "@zerodev/sdk": "^5.4.19",
         "@zerodev/webauthn-key": "^5.4.2",
         "@zerodev/weighted-ecdsa-validator": "^5.4.1",

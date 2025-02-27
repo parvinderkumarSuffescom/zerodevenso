@@ -29,8 +29,7 @@ import { getEntryPoint, KERNEL_V3_1 } from "@zerodev/sdk/constants";
 
 import {
   createWeightedKernelAccountClient,
-  getRecoveryFallbackActionInstallModuleData,
-  toECDSASigner,
+  getRecoveryFallbackActionInstallModuleData
 } from "@zerodev/weighted-validator";
 import {
   createWeightedECDSAValidator,
@@ -41,6 +40,7 @@ import {
   toPermissionValidator,
 } from "@zerodev/permissions";
 import { toSudoPolicy } from "@zerodev/permissions/policies";
+import { toECDSASigner } from "@zerodev/permissions/signers";
 
 const ensoClient = new EnsoClient({
   apiKey: "dc6a0639-3f79-4891-a0fd-5f0cf3033943",
@@ -194,8 +194,8 @@ export default function Home() {
       kernelVersion: KERNEL_V3_1,
     });
     console.log("sessionKeyAccount", sessionKeyAccount1);
-    // const serilaizeData = await serializePermissionAccount(sessionKeyAccount1, sessionPrivateKey);
-    // console.log("serilaizeData",serilaizeData)
+    const serilaizeData = await serializePermissionAccount(sessionKeyAccount1, sessionPrivateKey);
+    console.log("serilaizeData",serilaizeData)
 
     const kernelClient1 = createWeightedKernelAccountClient({
       account: sessionKeyAccount1,
